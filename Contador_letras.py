@@ -41,6 +41,22 @@ class TestCountLetters(unittest.TestCase):
                 'u': 1
             }
         )
-
+    def test_palabra(self):
+        result = count_letters('hola martin')
+        self.assertEqual(
+            result,
+            {
+            'h': 1,
+            'o': 1,
+            'l': 1,
+            'a': 2,
+            " ": 1,
+            'm': 1,
+            'r': 1,
+            't': 1,
+            'i': 1,
+            'n': 1
+            }
+        )
 if __name__ == '__main__':
     unittest.main()
